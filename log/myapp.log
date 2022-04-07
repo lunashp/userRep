@@ -1,0 +1,6 @@
+2022-04-07 11:33:57.398  INFO 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplicationKt  : Starting TeamPjApplicationKt using Java 1.8.0_321 on DESKTOP-D9LQ0RE with PID 12732 (C:\Users\82104\IdeaProjects\teamPJ\build\classes\kotlin\main started by 82104 in C:\Users\82104\IdeaProjects\teamPJ)
+2022-04-07 11:33:57.400  INFO 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplicationKt  : The following 2 profiles are active: "local", "file-logging"
+2022-04-07 11:33:58.103  INFO 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplicationKt  : Started TeamPjApplicationKt in 1.46 seconds (JVM running for 2.398)
+2022-04-07 11:33:58.109  INFO 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplication    : I'm info! Hello world.
+2022-04-07 11:33:58.110  WARN 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplication    : I'm warn! Hello world.
+2022-04-07 11:33:58.111 ERROR 12732 --- [main] kr.co.hjsoft.teampj.TeamPjApplication    : I'm error! Hello world.
