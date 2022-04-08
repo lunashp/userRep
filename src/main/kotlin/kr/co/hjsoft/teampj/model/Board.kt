@@ -2,8 +2,8 @@ package kr.co.hjsoft.teampj.model
 
 
 data class Board (
-    val number: Long,
-    val title : String,
-    val content : String,
-    val nickname : String,
+    val number: Long? = null,
+    val title: String? = null,
+    val content: String? = null,
+    val nickname: String? = null
 )

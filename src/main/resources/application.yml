@@ -4,13 +4,13 @@ spring:
       on-profile: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/user06?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/user06
     username: root
     password: 1234
   jpa:
     hibernate:
       ddl-auto: update
-    generate-ddl: true
+    format_sql: true
     show-sql: true
 ---
 
@@ -20,11 +20,11 @@ spring:
       on-profile: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://somewhere-dev-host:3306/user06?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://somewhere-dev-host:3306/user06
     username: root
     password: 1234
   jpa:
     hibernate:
       ddl-auto: update
-    generate-ddl: true
+    format_sql: true
     show-sql: true

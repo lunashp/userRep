@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository
 @Repository
 interface BoardRepository : JpaRepository<BoardEntity,Long>{
 
-    fun findAllByModel(): List<Board>{
-        return this.findAll().map { it.toModel() }
-    }
+//    fun findAllAsmodel(): List<Board>{
+//        return this.findAll().map {it.toModel()}
+//    }
 }

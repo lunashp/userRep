@@ -4,9 +4,9 @@ import kr.co.hjsoft.teampj.model.Board
 import javax.persistence.*
 
 @Entity
-@Table(name ="board")
-data class BoardEntity (
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+class BoardEntity (
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     val number: Long,
     val title : String,
     val content : String,

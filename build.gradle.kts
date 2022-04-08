@@ -26,10 +26,14 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-noarg")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("io.github.microutils:kotlin-logging:1.12.5")
+    implementation("org.projectlombok:lombok:1.18.20")
+    implementation("org.projectlombok:lombok:1.18.20")
 
     runtimeOnly("mysql:mysql-connector-java")
-
+    testImplementation("org.apache.commons:commons-lang3:3.11")
+    testImplementation("org.assertj:assertj-core:3.20.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("io.mockk:mockk:1.12.0")
 }
 
 tasks.withType<KotlinCompile> {

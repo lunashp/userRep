@@ -1,0 +1,17 @@
+version: "3.4"
+  x-common-mysql-env: &common-mysql-env
+  MYSQL_ROOT_PASSWORD: my-root-pwd
+  MYSQL_USER: my-user
+  MYSQL_PASSWORD: my-user-pwd
+  services:
+    mysql:
+      container_name: mysql-local
+      image: mysql:5.7
+      environment:
+        MYSQL_DATABASE: myapp_db
+        <<: *common-mysql-env
+      volumes:
+        - ./src/main/resources/sql:/docker-entrypoint-initdb.d/
+      ports:
+        - 3306:3306
+      command: --default-authentication-plugin=mysql_native_password
