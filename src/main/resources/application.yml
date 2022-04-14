@@ -4,9 +4,9 @@ spring:
       on-profile: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/user06
+    url: jdbc:mysql://localhost:3306/hj
     username: root
-    password: 1234
+    password: mysql
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,9 +20,9 @@ spring:
       on-profile: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://somewhere-dev-host:3306/user06
+    url: jdbc:mysql://somewhere-dev-host:3306/hj
     username: root
-    password: 1234
+    password: mysql
   jpa:
     hibernate:
       ddl-auto: update
